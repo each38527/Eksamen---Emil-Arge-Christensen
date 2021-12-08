@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="">
 
@@ -21,12 +25,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" style="color:#A5A5A5;" aria-current="page" href="index.php">Kollektion</a>
+                        <a class="nav-link" style="color:#A5A5A5;" aria-current="page" href="index.php">Kollektion</a>
                     </li>
                 </ul>
 
                 <div>
-                    <a href="kurv.php" class="nav-link active" style="color:#A5A5A5;"> Kurv(0)</a>
+                    <?php
+                    $count = 0;
+                    if (isset($_SESSION['kurv'])) {
+                        $count = count($_SESSION['kurv']);
+                    }
+                    ?>
+                    <a href="kurv.php" style="color:#A5A5A5;" class="btn btn-outline-succes"> Kurv(<?php echo $count; ?>)</a>
                 </div>
 
             </div>

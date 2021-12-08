@@ -1,5 +1,4 @@
 <?php include("header.php");
-session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,11 +35,16 @@ session_start();
                                 $total = $total + $value['pris'];
                                 echo "
                                     <tr>
+                                        <td>1</td>
                                         <td>$value[produkt_navn]</td>
                                         <td>$value[pris]</td>
                                         <td><input class='text-center' type='number' value='$value[antal] min='0' max='99'></td>
-                                        <td><button class= 'btn btn-sm btn-outline-danger'>Fjern</button></td>
-                                        <td></td>
+                                        <td>
+                                            <form action= 'læg_i_kurv.php' method='POST'>
+                                            <button name='Fjern_vare' class= 'btn btn-sm btn-outline-danger'>Fjern</button>
+                                            <input type='hidden' name='produkt_navn' value='$value[produkt_navn]'>
+                                            </form>
+                                        </td>
                                     </tr>
                                  ";
                             }
@@ -52,8 +56,13 @@ session_start();
 
             <div class="col-lg-3">
                 <div class='border bg-light rounded p-4'>
-                    <h5>Total</h5>
-                    <h7 class="text-right"><?php echo $total, ",-" ?></h7>
+                    <h4>Total</h4>
+                    <h5><?php echo $total, ",-" ?></h5>
+                    <br>
+                    <form>
+
+                        <button class="btn btn-primary btn-block">Fortsæt til kassen</button>
+                    </form>
                 </div>
             </div>
 
