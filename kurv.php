@@ -35,7 +35,6 @@
                                 $total = $total + $value['pris'];
                                 echo "
                                     <tr>
-                                        <td>1</td>
                                         <td>$value[produkt_navn]</td>
                                         <td>$value[pris]</td>
                                         <td><input class='text-center' type='number' value='$value[antal] min='0' max='99'></td>

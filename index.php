@@ -20,7 +20,7 @@
                         <img src="images/Laenestole_360x440.jpg" class="card-img-top">
                         <div class=" card-body text-center">
                             <h5 class="card-title">Nobel 8920</h5>
-                            <p class="card-text">Pris: 15.595 Kr.</p>
+                            <p class="card-text">Pris: 15.595 Kr.<?php ?></p>
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Betræk
@@ -41,7 +41,7 @@
                             </div>
                             <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
                             <input type="hidden" name="produkt_navn" value="Nobel 8920">
-                            <input type="hidden" name="pris" value="15.595">
+                            <input type="hidden" name="pris" value="15595">
                         </div>
                     </div>
                 </form>
@@ -73,7 +73,7 @@
                             </div>
                             <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
                             <input type="hidden" name="produkt_navn" value="Plus 5060">
-                            <input type="hidden" name="pris" value="17.110 Kr">
+                            <input type="hidden" name="pris" value="17110">
                         </div>
                     </div>
                 </form>
@@ -105,7 +105,7 @@
                             </div>
                             <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
                             <input type="hidden" name="produkt_navn" value="2550 Stag W">
-                            <input type="hidden" name="pris" value="4.370">
+                            <input type="hidden" name="pris" value="4370">
                         </div>
                     </div>
                 </form>
@@ -136,8 +136,8 @@
                                 </div>
                             </div>
                             <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
-                            <input type="hidden" name="item_name" value="Plus 5021">
-                            <input type="hidden" name="pris" value="15.075 Kr">
+                            <input type="hidden" name="produkt_navn" value="Plus 5021">
+                            <input type="hidden" name="pris" value="15075">
                         </div>
                     </div>
                 </form>
