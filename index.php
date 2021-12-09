@@ -21,27 +21,35 @@
                         <div class=" card-body text-center">
                             <h5 class="card-title">Nobel 8920</h5>
                             <p class="card-text">Pris: 15.595 Kr.<?php ?></p>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Betræk
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Tekstil</a>
-                                    <a class="dropdown-item" href="#">Læder</a>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Stel
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Natur</a>
-                                    <a class="dropdown-item" href="#">Bejdset</a>
-                                </div>
-                            </div>
-                            <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
-                            <input type="hidden" name="produkt_navn" value="Nobel 8920">
-                            <input type="hidden" name="pris" value="15595">
+                            <form method="POST" action="">
+                                <form method="POST" action="">
+                                    <select class="btn btn-secondary" name="betræk" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Betræk</option>
+                                        <option value="tekstil">Tekstil</option>
+                                        <option value="læder">Læder</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["betræk"])) {
+                                    $stel = $_POST["betræk"];
+                                }
+                                ?>
+                                <br>
+                                <form method="POST" action="">
+                                    <select name="stel" class="btn btn-secondary" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Stel</option>
+                                        <option value="natur">Natur</option>
+                                        <option value="bejdset">Bejdset</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["stel"])) {
+                                    $stel = $_POST["stel"];
+                                }
+                                ?>
+                                <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
+                                <input type="hidden" name="produkt_navn" value="Nobel 8920">
+                                <input type="hidden" name="pris" value="15595">
                         </div>
                     </div>
                 </form>
@@ -53,27 +61,35 @@
                         <div class=" card-body text-center">
                             <h5 class="card-title">Plus 5060</h5>
                             <p class="card-text">Pris: 17.110 Kr.</p>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Betræk
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Tekstil</a>
-                                    <a class="dropdown-item" href="#">Læder</a>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Stel
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Natur</a>
-                                    <a class="dropdown-item" href="#">Bejdset</a>
-                                </div>
-                            </div>
-                            <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
-                            <input type="hidden" name="produkt_navn" value="Plus 5060">
-                            <input type="hidden" name="pris" value="17110">
+                            <form method="POST" action="">
+                                <form method="POST" action="">
+                                    <select class="btn btn-secondary" name="betræk" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Betræk</option>
+                                        <option value="tekstil">Tekstil</option>
+                                        <option value="læder">Læder</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["betræk"])) {
+                                    $stel = $_POST["betræk"];
+                                }
+                                ?>
+                                <br>
+                                <form method="POST" action="">
+                                    <select name="stel" class="btn btn-secondary" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Stel</option>
+                                        <option value="natur">Natur</option>
+                                        <option value="bejdset">Bejdset</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["stel"])) {
+                                    $stel = $_POST["stel"];
+                                }
+                                ?>
+                                <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
+                                <input type="hidden" name="produkt_navn" value="Plus 5060">
+                                <input type="hidden" name="pris" value="17110">
                         </div>
                     </div>
                 </form>
@@ -85,27 +101,35 @@
                         <div class=" card-body text-center">
                             <h5 class="card-title">2550 Stag W</h5>
                             <p class="card-text">Pris: 4.370 Kr.</p>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Betræk
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Tekstil</a>
-                                    <a class="dropdown-item" href="#">Læder</a>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Stel
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Natur</a>
-                                    <a class="dropdown-item" href="#">Bejdset</a>
-                                </div>
-                            </div>
-                            <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
-                            <input type="hidden" name="produkt_navn" value="2550 Stag W">
-                            <input type="hidden" name="pris" value="4370">
+                            <form method="POST" action="">
+                                <form method="POST" action="">
+                                    <select class="btn btn-secondary" name="betræk" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Betræk</option>
+                                        <option value="tekstil">Tekstil</option>
+                                        <option value="læder">Læder</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["betræk"])) {
+                                    $stel = $_POST["betræk"];
+                                }
+                                ?>
+                                <br>
+                                <form method="POST" action="">
+                                    <select name="stel" class="btn btn-secondary" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Stel</option>
+                                        <option value="natur">Natur</option>
+                                        <option value="bejdset">Bejdset</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["stel"])) {
+                                    $stel = $_POST["stel"];
+                                }
+                                ?>
+                                <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
+                                <input type="hidden" name="produkt_navn" value="2550 Stag W">
+                                <input type="hidden" name="pris" value="4370">
                         </div>
                     </div>
                 </form>
@@ -117,27 +141,35 @@
                         <div class=" card-body text-center">
                             <h5 class="card-title">Plus 5021</h5>
                             <p class="card-text">Pris: 15.075 Kr.</p>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Betræk
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Tekstil</a>
-                                    <a class="dropdown-item" href="#">Læder</a>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Stel
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Natur</a>
-                                    <a class="dropdown-item" href="#">Bejdset</a>
-                                </div>
-                            </div>
-                            <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
-                            <input type="hidden" name="produkt_navn" value="Plus 5021">
-                            <input type="hidden" name="pris" value="15075">
+                            <form method="POST" action="">
+                                <form method="POST" action="">
+                                    <select class="btn btn-secondary" name="betræk" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Betræk</option>
+                                        <option value="tekstil">Tekstil</option>
+                                        <option value="læder">Læder</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["betræk"])) {
+                                    $stel = $_POST["betræk"];
+                                }
+                                ?>
+                                <br>
+                                <form method="POST" action="">
+                                    <select name="stel" class="btn btn-secondary" onchange="this.form.submit()">
+                                        <option value="" disabled selected>Stel</option>
+                                        <option value="natur">Natur</option>
+                                        <option value="bejdset">Bejdset</option>
+                                    </select>
+                                </form>
+                                <?php
+                                if (isset($_POST["stel"])) {
+                                    $stel = $_POST["stel"];
+                                }
+                                ?>
+                                <button type="submit" name="tilføj_til_kurv" class="btn btn-secondary">Læg i kurv</button>
+                                <input type="hidden" name="produkt_navn" value="Plus 5021">
+                                <input type="hidden" name="pris" value="15075">
                         </div>
                     </div>
                 </form>
